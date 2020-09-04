@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <style>
+      
+      body{
+        font-family: 'Red Hat Text', sans-serif;
+      }
+
+/* ------------------------------------------------ */
+
+      .wrapper{
+        background: #3D3D3D;
+        max-width: 100%;
+        height: 70px;
+        padding: 20px ;
+        display: flex;
+        justify-content:space-between;
+      }
+      .wrapper_link{
+        display: none;
+      }
+      .d_fiex{
+        display: flex;
+      }
+      .about_img img{
+        width: 100%;
+      }
+      .sign_link{
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+      }
+      .sign_link a:hover{
+        color: #06AAE8;
+        text-decoration: none;
+      }
+      
+      .wrapper_line{
+        padding: 0 20px;
+      }
+      .wrapper_line::before{
+        content: "";
+        width: 2px;
+        background: #ABABAB;
+        height: 23px;
+        position: absolute;
+      }
+      a:visited{color: #ABABAB;
+      }
+
+      .banner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+      }
+      .logo_img{
+        width: 50px;
+        padding: 15px 0 0 0;
+      }
+
+      .banner_link{
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0 0 30px;
+      }
+      .banner_link a:hover,
+      .banner_link.active a{
+        color: #06AAE8;
+        text-decoration: none;
+      }
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+      .sign_link{
+        display: none;
+      }
+      .banner{
+        display: none;
+      }
+      .wrapper_line{
+        display: none;
+      }
+      .transition {
+      transition: 0.4s;
+    }
+    .d_fiex{
+      padding: 0;
+    }
+
+    .wrapper_link {
+      width: 800px;
+      /* margin: 10px auto; */
+      /* padding: 5px 0; */
+      display: flex;
+      justify-content: space-between;
+      z-index: 20;
+    }
+
+    .menu {
+      display: inline-block;
+      cursor: pointer;
+      padding: 0 10px 0 2px;
+      position: relative;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bar {
+      width: 36px;
+      height: 6px;
+      background: #666;
+      margin: 6px 0;
+      border-radius: 2px;
+    }
+
+    .active .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+      transform: rotate(-45deg) translate(-9px, 7px);
+    }
+
+    .active .bar2 {
+      opacity: 0;
+    }
+
+    .active .bar3 {
+      -webkit-transform: rotate(45deg) translate(-9px, -8px);
+      transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .menu.active ul{
+      opacity: 1;
+      max-height: 300px;
+    }
+
+    .menu ul {
+      background: #fff;
+      position: absolute;
+      transition: .4s;
+      opacity: 0;
+      overflow: hidden;
+      max-height: 0;
+    }
+
+    .menu ul li a {
+      display: block;
+      padding: 6px 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .menu ul li a:hover {
+      background: #eee;
+    }
+      }
+
+/* ------------------------------------------------ */
+
+
+
+      .about_img{
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+        background: url("image/about_edition.png");
+      }
+      .about_content{
+        text-align: center;
+      }
+      .about_title{
+        color: #06AAE8;
+        padding: 40px;
+      }
+      .about_logos{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        padding: 100px;
+      }
+      .about_logos li a{
+        padding: 5px;
+      }
+
+/* ------------------------------------------------ */
+
+      .wrapper_footer{
+        width: 100%;
+        background: #3D3D3D;
+        height: 100%;
+        position: fixed;
+      }
+      .wrapper_footer p{
+        text-align: center;
+        padding: 20px;
+        color: #ABABAB;
+      }
+
+    </style>
+  </head>
+  <body>
+      <header>
+
+        <!-- 1 -->
+          <nav>
+            <div class="wrapper">
+                <ul class="banner">
+                  <a href="Home.html"><img class="logo_img" src="image/LOGO.png" alt=""></a>
+                    <li class="banner_link active">
+                      <a href="About.html">About</a>
+                    </li>
+                    <li class="banner_link">
+                      <a href="Latest_News.html">Latest News</a>
+                    </li>
+                    <li class="banner_link"> 
+                      <a href="Products.html">Products</a>
+                    </li>
+                    <li class="banner_link">
+                      <a href="Contact.html">Contact</a>
+                    </li>
+                  </ul>
+              <ul class="d_fiex">
+                    <li class="sign_link">
+                      <a href="">Register</a>
+                    </li>
+                <div class="wrapper_line"></div>
+                <li class="sign_link">
+                    <a href="">Sign in</a>
+                </li>
+              </ul>
+         
+            <!-- 1-1 -->
+        <div class="wrapper_link">
+          <div class="menu transition">
+            <div class="bar bar1 transition"></div>
+            <div class="bar bar2 transition"></div>
+            <div class="bar bar3 transition"></div>
+            <ul>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Latest_News.html">Latest News</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a href="Home.html"><img class="logo_img_two" src="image/LOGO.png" width="45px" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+          <!-- 2 -->
+          <section>
+            <figure>
+              <div class="about_img"></div>
+            </figure>
+            <div class="about_content">
+              <h2 class="about_title">INNOVATORS IN DESIGN AND TECHNOLOGY</h2>
+              <p class="about_p">Logitech G is a team focused on pushing the boundaries of performance and exploring the possibilities of play.<br>The gaming world is forever evolving and we are dedicated to meeting the challenge. Through better gear and game integration,<br>we facilitate an every greater gaming experience. From HERO, our most accurate gaming sensor to the most immersive,<br>to LIGHTSYNC, our game-driven RGB technology.</p>
+            </div>
+            <div>
+            <ul class="about_logos">
+              <li class="about_logo">
+                <a href="https://www.facebook.com/logitechG.taiwan/?brand_redir=96895859870"><img src="image/facebook.png" alt=""></a>
+              </li>
+              <li class="about_logo"></li>
+                <a href=""><img src="image/instagrams.png" alt=""></a>
+              </li>
+              <li class="about_logo">
+                <a href="https://twitter.com/LogitechG"><img src="image/twitter.png" alt=""></a>
+              </li>
+              <li class="about_logo">
+                <a href="https://www.youtube.com/channel/UCCNyeUr-yOwdoVzmb_CDITg"><img src="image/youtube.png" alt=""></a>
+              </li>
+            </ul>
+          </div>
+          </section>
+        </header>
+        
+          <!-- 3 -->
+      <footer>
+        <div class="wrapper_footer">
+          <p>&copy 2020 Logitech. All rights reserved</p>
+        </div>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>
+          $(".menu").click(function () {
+            $(this).toggleClass("active")
+          })
+        </script>
+  </body>
+</html>

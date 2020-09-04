@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>G903</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+     body{
+        font-family: 'Red Hat Text', sans-serif;
+      }
+
+/* ------------------------------------------------ */
+
+      .wrapper{
+        background: #3D3D3D;
+        max-width: 100%;
+        height: 70px;
+        padding: 20px ;
+        display: flex;
+        justify-content:space-between;
+      }
+      .wrapper_link{
+        display: none;
+      }
+      .d_fiex{
+        display: flex;
+      }
+      .about_img img{
+        width: 100%;
+      }
+      .sign_link{
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+      }
+      .sign_link a:hover{
+        color: #06AAE8;
+        text-decoration: none;
+      }
+      
+      .wrapper_line{
+        padding: 0 20px;
+      }
+      .wrapper_line::before{
+        content: "";
+        width: 2px;
+        background: #ABABAB;
+        height: 23px;
+        position: absolute;
+      }
+      a:visited{color: #ABABAB;
+      }
+
+      .banner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+      }
+      .logo_img{
+        width: 50px;
+        padding: 15px 0 0 0;
+      }
+
+      .banner_link{
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0 0 30px;
+      }
+      .banner_link a:hover,
+      .banner_link.active a{
+        color: #06AAE8;
+        text-decoration: none;
+      }
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+      .sign_link{
+        display: none;
+      }
+      .banner{
+        display: none;
+      }
+      .wrapper_line{
+        display: none;
+      }
+      .transition {
+      transition: 0.4s;
+    }
+    .d_fiex{
+      padding: 0;
+    }
+
+    .wrapper_link {
+      width: 800px;
+      /* margin: 10px auto; */
+      /* padding: 5px 0; */
+      display: flex;
+      justify-content: space-between;
+      z-index: 20;
+    }
+
+    .menu {
+      display: inline-block;
+      cursor: pointer;
+      padding: 0 10px 0 2px;
+      position: relative;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bar {
+      width: 36px;
+      height: 6px;
+      background: #666;
+      margin: 6px 0;
+      border-radius: 2px;
+    }
+
+    .active .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+      transform: rotate(-45deg) translate(-9px, 7px);
+    }
+
+    .active .bar2 {
+      opacity: 0;
+    }
+
+    .active .bar3 {
+      -webkit-transform: rotate(45deg) translate(-9px, -8px);
+      transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .menu.active ul{
+      opacity: 1;
+      max-height: 300px;
+    }
+
+    .menu ul {
+      background: #fff;
+      position: absolute;
+      transition: .4s;
+      opacity: 0;
+      overflow: hidden;
+      max-height: 0;
+    }
+
+    .menu ul li a {
+      display: block;
+      padding: 6px 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .menu ul li a:hover {
+      background: #eee;
+    }
+    .g903{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    .g903_one{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      font-size: 10px;
+    }
+      }
+
+/* ------------------------------------------------ */
+
+      .g903{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 100%;
+      }
+      .g903_line::before{
+        content: "";
+        width: 2px;
+        background: #06AAE8;
+        height: 23px;
+        position: absolute;
+      }
+      .g903_text{
+        color: #ABABAB;
+      }
+      .g903_text h1{
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 70px;
+      }
+      .g903_text h4{
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 100px;
+      }
+      .g903_text .h5_free{
+        padding: 0 0 50px 0;
+      }
+
+/* ------------------------------------------------ */
+
+      .section_three{
+        background: #3D3D3D;
+        max-height: 100%;
+      }
+      .g903_title{
+        color: #06AAE8;
+        padding: 20px;
+      }
+      .g903_one{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: space-around;
+        color: #ABABAB;
+      }
+      .g903_border{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #ABABAB;
+        border-style:dashed;
+      }
+      .g903_one p{
+        padding: 5px;
+        margin: 0;
+      }
+  </style>
+  </head>
+  <body>
+      <!-- 1 -->
+      <nav>
+        <div class="wrapper">
+            <ul class="banner">
+              <a href="Home.html"><img class="logo_img" src="image/LOGO.png" alt=""></a>
+                <li class="banner_link active">
+                  <a href="About.html">About</a>
+                </li>
+                <li class="banner_link">
+                  <a href="Latest_News.html">Latest News</a>
+                </li>
+                <li class="banner_link"> 
+                  <a href="Products.html">Products</a>
+                </li>
+                <li class="banner_link">
+                  <a href="Contact.html">Contact</a>
+                </li>
+              </ul>
+          <ul class="d_fiex">
+                <li class="sign_link">
+                  <a href="">Register</a>
+                </li>
+            <div class="wrapper_line"></div>
+            <li class="sign_link">
+                <a href="">Sign in</a>
+            </li>
+          </ul>
+          <!-- 1-1 -->
+        <div class="wrapper_link">
+          <div class="menu transition">
+            <div class="bar bar1 transition"></div>
+            <div class="bar bar2 transition"></div>
+            <div class="bar bar3 transition"></div>
+            <ul>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Latest_News.html">Latest News</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a href="Home.html"><img class="logo_img_two" src="image/LOGO.png" width="45px" alt=""></a>
+        </div>
+      </div>
+            </div>
+      </nav>
+
+      <!-- 2 -->
+
+      <section>
+      <div class="g903">
+        <div class="g903_image py-5">
+          <img src="image/G903.png" width="250px" alt="">
+        </div>
+        <div class="g903_text">
+          <h1>G903</h1>
+          <h5>OPTICAL GAMING MOUSE</h5>
+          <h4>$69.99</h4>
+          <h5 class="h5_free">FREE SHIPPING ON ORDERS GBP 39.00
+            <br>AND OVER.</h5>
+            <div class="icon_cart">
+              <button type="button" class="btn btn-primary p-2" data-toggle="button" aria-pressed="false">
+                <svg class="bi bi-cart3 py-2" width="1.5em"  viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg> ADD TO CART
+              </button>
+            </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- 3 -->
+
+      <section>
+      <div class="section_three">
+        <div class="g903_title">
+          <h1>SPECIFICATIONS</h1>
+        </div>
+        <div class="g903_one">
+        <div class="g903_content">
+          <h4>PACKAGE CONTENTS</h4>
+          <p class="g903_border">G903 Gaming Mouse</p>
+          <p>User documentation</p>
+        </div>
+        <div class="g903_content">
+          <h4>PHYSICAL SPECIFICATIONS</h4>
+          <p class="g903_border">Height: 4.53 in (115 mm)</p>
+          <p class="g903_border">Width: 2.83 in (72 mm)</p>
+          <p class="g903_border">Depth: 1.46 in (37 mm)</p>
+          <p class="g903_border">Weight: 2.89 oz(82 g) mouse only</p>
+          <p>Cable length: ~7 ft (2.10 m)</p>
+        </div>
+        <div class="g903_content">
+          <h4>PHYSICAL SPECIFICATIONS</h4>
+          <p class="g903_border">Resolution: 200 – 2,500 DPI</p>
+          <p class="g903_border">Zero smoothing/acceleration/filtering</p>
+          <p>Depth: 1.46 in (37 mm)</p>
+        </div>
+        <div class="g903_content">
+          <h4>RESPONSIVENESS</h4>
+          <p class="g903_border">USB data format: 16 bits/axis</p>
+          <p class="g903_border">USB report rate: 1000 Hz (1ms)</p>
+          <p>Microprocessor: 32-bit ARM</p>
+        </div>
+        <div class="g903_content">
+          <h4>SYSTEM REQUIREMENTS</h4>
+          <p class="g903_border">Windows® 7 or later</p>
+          <p class="g903_border">macOS® 10.11 or later</p>
+          <p>Internet access for Logitech G HUB (optional)</p>
+        </div>
+      </div>
+    </div>
+      </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>
+          $(".menu").click(function () {
+            $(this).toggleClass("active")
+          })
+        </script>
+  </body>
+</html>

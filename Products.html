@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Products</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+       body{
+        font-family: 'Red Hat Text', sans-serif;
+      }
+      .row {
+       margin: 0 !important;
+      padding: 0 !important;
+      }
+
+
+/* ------------------------------------------------ */
+
+      .wrapper{
+        background: #3D3D3D;
+        max-width: 100%;
+        height: 70px;
+        padding: 20px ;
+        display: flex;
+        justify-content:space-between;
+      }
+      .wrapper_link{
+       display: none;
+      }
+      .d_fiex{
+        display: flex;
+      }
+      .about_img img{
+        width: 100%;
+      }
+      .sign_link{
+        font-size: 15px;
+        list-style: none;
+        text-decoration: none;
+      }
+      .sign_link a:hover{
+        color: #06AAE8;
+        text-decoration: none;
+      }
+      
+      .wrapper_line{
+        padding: 0 20px;
+      }
+      .wrapper_line::before{
+        content: "";
+        width: 2px;
+        background: #ABABAB;
+        height: 23px;
+        position: absolute;
+      }
+      a:visited{
+        color: #ABABAB;
+      }
+
+      .banner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+
+      }
+      .logo_img{
+        width: 50px;
+        padding: 15px 0 0 0;
+      }
+
+      .banner_link{
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0 0 30px;
+      }
+      .banner_link a:hover,
+      .banner_link.active a{
+        color: #06AAE8;
+        text-decoration: none;
+      }
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+      padding: 5px 0;
+    }
+
+    .sign_link {
+      display: none;
+    }
+
+    .wrapper_line {
+      display: none;
+    }
+
+    .wrapper_two {
+      display: none;
+    }
+
+    .transition {
+      transition: 0.4s;
+    }
+
+    .d_fiex {
+      padding: 0;
+    }
+
+    .wrapper_link {
+      width: 800px;
+      margin: 10px auto;
+      display: flex;
+      padding: 0 10px 0 10px;
+      justify-content: space-between;
+      z-index: 20;
+    }
+
+    .menu {
+      display: inline-block;
+      cursor: pointer;
+      padding: 0 10px 0 2px;
+      position: relative;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bar {
+      width: 36px;
+      height: 6px;
+      background: #666;
+      margin: 6px 0;
+      border-radius: 2px;
+    }
+
+    .active .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+      transform: rotate(-45deg) translate(-9px, 7px);
+    }
+
+    .active .bar2 {
+      opacity: 0;
+    }
+
+    .active .bar3 {
+      -webkit-transform: rotate(45deg) translate(-9px, -8px);
+      transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .menu.active ul {
+
+      opacity: 1;
+      max-height: 300px;
+    }
+
+    .menu ul {
+      background: #fff;
+      position: absolute;
+      transition: .4s;
+      /* display: none; */
+      opacity: 0;
+      overflow: hidden;
+      max-height: 0;
+    }
+
+    .menu ul li a {
+      display: block;
+      padding: 6px 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .menu ul li a:hover {
+      background: #eee;
+    }
+
+    .banner {
+      display: none;
+    }
+    .commodity{
+      display: flex;
+      flex-direction: column;
+    }
+    .commodity_keyboard{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* ------------------------------------------------ */
+
+      .products_img{
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+        background: url("image/mouse_edition.png") center center no-repeat;
+      }
+      .products_img h1{
+          padding: 200px 0 50px 80px;
+          text-align: left;
+          color: #06AAE8;
+      }
+
+/* ------------------------------------------------ */
+
+      .col-3{
+        background-color: #5A5A5A;
+        width: 20px;
+        padding: 0;
+        max-height: 100%;
+      }
+      .col-3 a{
+        color: #FFF;
+        text-align: center;
+        max-height: 100%;
+      }
+      .nav-pills .nav-link{
+        border-radius: 0;
+      }
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        background-color: #484848;
+      }
+/* ------------------------------------------------ */
+
+      .commodity{
+        background-color: #FFF;
+        height: 900px;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+      }
+      .commodity_link::before{
+        content: "";
+        width: 5px;
+        background: #06AAE8;
+        height: 40px;
+        position: absolute;
+      }
+      .commodity p{
+        padding: 5px 0 0 10px;
+      }
+      .commodity h3{
+        font-weight: bold;
+      }
+      .keyboard_background{
+        background-color: #FFF;
+        height: 900px;
+      }
+      .commodity_keyboard{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 50px;
+      }
+      .commodity_keyboard img{
+        margin: 0 0 20px 0;
+      }
+      .commodity_keyboard p{
+        padding: 5px 0 0 10px;
+      }
+      .commodity_keyboard h3{
+        font-weight: bold;
+      }
+  </style>
+  <body>
+      <!-- 1 -->
+      <nav>
+        <div class="wrapper">
+            <ul class="banner">
+              <a href="Home.html"><img class="logo_img" src="image/LOGO.png" alt=""></a>
+                <li class="banner_link">
+                  <a href="About.html">About</a>
+                </li>
+                <li class="banner_link">
+                  <a href="Latest_News.html">Latest News</a>
+                </li>
+                <li class="banner_link active"> 
+                  <a href="Products.html">Products</a>
+                </li>
+                <li class="banner_link">
+                  <a href="Contact.html">Contact</a>
+                </li>
+              </ul>
+          <ul class="d_fiex">
+                <li class="sign_link">
+                  <a href="">Register</a>
+                </li>
+            <div class="wrapper_line"></div>
+            <li class="sign_link">
+                <a href="">Sign in</a>
+            </li>
+          </ul>
+          <!-- 1-1 -->
+        <div class="wrapper_link">
+          <div class="menu transition">
+            <div class="bar bar1 transition"></div>
+            <div class="bar bar2 transition"></div>
+            <div class="bar bar3 transition"></div>
+            <ul>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Latest_News.html">Latest News</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a href="Home.html"><img class="logo_img_two" src="image/LOGO.png" width="45px" alt=""></a>
+        </div>
+      </div>
+      </div>
+    </nav>
+            </div>
+      </nav>
+
+      <!-- 2 -->
+      <section>
+            <div class="products_img">
+                <h1 class="products_h1">GAMING</h1>
+            </div>
+      </section>
+
+      <!-- 3 -->
+      <section>
+      <div class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link py-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mouse</a>
+            <a class="nav-link py-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Keyboard</a>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+              <div class="background_col"></div>
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="commodity">
+                <div class="commodity_g300s">
+                <a href="G300s.html" style="text-decoration:none">
+                  <img src="image/G300s.png" width="100px" alt="">
+                  <div class="commodity_link"></div>
+                  <p>G300s<br>LIGHTSYNC</p>
+                  <h3>$39.99</h3>
+                </a>
+                </div>
+                <div class="commodity_G403">
+                  <a href="G403.html" style="text-decoration:none">
+                    <img src="image/G403.png" width="100px" alt="">
+                    <div class="commodity_link"></div>
+                    <p>G403<br>LIGHTSYNC</p>
+                    <h3>$69.99</h3>
+                  </a>
+                </div>
+                 <div class="commodity_G403">
+                  <a href="G903.html" style="text-decoration:none">
+                    <img src="image/G903.png" width="100px" alt="">
+                      <div class="commodity_link"></div>
+                      <p>G903<br>LIGHTSYNC</p>
+                      <h3>$49.99</h3>
+                    </a>
+                 </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="keyboard_background">
+              <div class="commodity_keyboard">
+                <div class="commodity_G213">
+                <a href="G213.html" style="text-decoration:none">
+                  <img src="image/G213.png" width="200px" alt="">
+                  <div class="commodity_link"></div>
+                  <p>G213<br>LIGHTSYNC</p>
+                  <h3>$199.98</h3>
+                </a>
+                </div>
+                <div class="commodity_G413">
+                  <a href="G413.html" style="text-decoration:none">
+                    <img src="image/G413.png" width="200px" alt="">
+                    <div class="commodity_link"></div>
+                    <p>G413<br>LIGHTSYNC</p>
+                    <h3>$149.99</h3>
+                  </a>
+                </div>
+                 <div class="commodity_G910">
+                  <a href="G910.html" style="text-decoration:none">
+                    <img src="image/G910.png" width="200px" alt="">
+                      <div class="commodity_link"></div>
+                      <p>G910<br>LIGHTSYNC</p>
+                      <h3>$99.99</h3>
+                    </a>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+    $(".menu").click(function () {
+      $(this).toggleClass("active")
+    })
+  </script>
+  </script>
+  </body>
+</html>
